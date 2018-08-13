@@ -1,0 +1,57 @@
+.wrapper {
+  width: 760px;
+  height: 506px;
+  overflow: hidden;
+  margin: 15px auto 0 auto;
+  border: 0px;
+  position: relative;
+}
+
+.accordion {
+    background-color: #9932cc;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+    cursor: pointer;
+    padding: 30px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+    background-color: #5900b3;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    font-size: 18px;
+    color: grey;
+}
+
+.accordion:after {
+    content: "\25bc";
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+    color: white;
+    font-style: normal;
+}
+
+.active:after {
+    content: "\25b2";
+    color: white;
+}
+
+.box {
+	width: 320px;
+	padding: 10px;
+	margin: 0px;
+}
